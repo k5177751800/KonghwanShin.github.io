@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Konghwan Shin</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Konghwan Shin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/KonghwanShinpic.jpg" alt="Konghwan Shin Profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p2">Hello, I'm</p>
+        <h1 class="title">Konghwan Shin</h1>
+        <p class="section__text__p2">Full Stack Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Konghwanshin-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <a href="https://linkedin.com/in/konghwan-shin-2b574524a/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>          
+          <a href="https://github.com/k5177751800" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://www.instagram.com/kh_s_ins/" target="_blank">
+            <img
+              src="./assets/instagram-logo.jpeg"
+              alt="My instagram Profile"
+              class="icon"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Kong.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Graduation</h3>
+              <p>Class of 2025<br />Electrical and Computer Engineering</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S Bachelors Degree<br /><a href="https://www.utexas.edu/" target="_blank">The University of Texas at Austin</a></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am pursuing a Bachelor's in Electrical and Computer Engineering, with an expected graduation date of 2025. I am also an undergrad laboratory assistant at Cockrell School of Engineering, The University of Texas at Austin, where I work with students and faculty members on various projects involving TM4C microcontrollers and C programming. As an undergrad lab assistant, I have contributed to enhancing the work efficiency and learning outcomes of both students and faculty members.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+
+    <div class="experience" id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="timeline">
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">August 2023 - Present</div>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Undergrad Laboratory Assistant, University of Texas at Austin - Austin, TX</h2>
+          <p class="timeline__paragraph">
+            ● Sorted lab items in order and ensured an organized and efficient work environment for both students and faculty members <br>● Tested TM4C Microcontrollers and used C programming with students and enhanced work efficiency by 40%
+          </p>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Korean Engineering Student Association - Austin, TX</h2>
+          <p class="timeline__paragraph">
+            ● Learned basics of HTML/CSS and React, and collaborated on a group website project. <br>● Programmed real estate program, using Java, which tracks Austin apartment prices and allows users to search based on their need
+          </p>
+          
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component">
+          <div class="timeline__date">October, 2022 - Present</div>
+        </div>
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">May 2023 - August 2023</div>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">SBS Coding Academy - South Korea</h2>
+          <p class="timeline__paragraph">
+            ● Refined C, Java, and Python programming skills through different projects such as a horse betting game. <br> ● Programmed using C a horse betting game by using random functions <br> ● Refined coding and achieved processing time to be reduced by 34% of the original processing time of the game
+          </p>
+        </div>
+
+        
+        
+        <div class="timeline__component timeline__component--bottom timeline__component--bg">
+          <h2 class="timeline__title">University of Korean Association - Austin, TX </h2>
+          <p class="timeline__paragraph">
+            Director of Sponsorship <hr> ● Leading meetings with local sponsors to sponsor the University of Korean Association through strategic promoting the merit of the student association <br>
+            Stock Invest Club <hr> ● Shared investment strategies in terms of both quantitative and technical perspectives and discussed current market situations, allowing the understanding of the market and economic situation.
+          </p>
+
+        </div>
+        
+
+       
+       
+
+        <div class="timeline__middle">
+          <div class="timeline__point"></div>
+          
+        </div>
+        <div class="timeline__component timeline__component--bottom">
+          <div class="timeline__date">August 2022 - Present</div>
+        </div>
+
+
+
+        <div class="timeline__component">
+          <div class="timeline__date timeline__date--right">Jun, 2020 - August 2020</div>
+        </div>
+        <div class="timeline__middle">
+          <div class="timeline__point-1"></div>
+
+        </div>
+        <div class="timeline__component timeline__component--bg">
+          <h2 class="timeline__title">Intercheck Co, LTD - South Korea</h2>
+          <p class="timeline__paragraph">
+            Hardware Engineering Intern <hr>● Assisted with the enhancement of the semiconductor chip performance through calculations done via company-adopted software. <br>● Learned how to communicate with a client as a leader of the team and kept in touch with team members to enhance the laser’s beam diameter and length by 45% through the company via software ● learned basics of semi-conductor and its operation through a mentoring program done by the company
+          </p>
+        </div>
+      
+      </div>
+
+      
+    </div>
+
+
+
+
+
+
+    <div id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SWIFT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C/C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Assembly</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Swift</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Hardware</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PCB Design</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Schematic</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Circuit Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microcontroller</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            
+            </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </div>
+
+    <div class="section__header">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+    </div>
+    <div class="projects" id="projects">
+      <div class="experience-details-container">
+          <div class="about-containers">
+              <div class="details-container color-container">
+                  <!-- Project 1 -->
+                  <div class="article-container">
+                      <img src="./assets/project1.jpeg" alt="Project 1" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Introduction to Software Engineering</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/k5177751800/ECE-312', '_blank')">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/k5177751800', '_blank')">Live Demo</button>
+                  </div>
+              </div>
+              <!-- Repeat this block for Project 2 -->
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Introduction to Software Engineering II</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/k5177751800/ECE-422C', '_blank')">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/k5177751800', '_blank')">Live Demo</button>
+                  </div>
+              </div>
+              <!-- Repeat this block for Project 3 -->
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project Three</h2>
+                  <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+                  </div>
+              </div>
+              <!-- Add Project 4 -->
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img src="./assets/project-4.png" alt="Project 4" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project Four</h2>
+                  <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/project4'">Github</button>
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/project4'">Live Demo</button>
+                  </div>
+              </div>
+              <!-- Add Project 5 -->
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img src="./assets/project-5.png" alt="Project 5" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project Five</h2>
+                  <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/project5'">Github</button>
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/project5'">Live Demo</button>
+                  </div>
+              </div>
+              <!-- Add Project 6 -->
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img src="./assets/project-6.png" alt="Project 6" class="project-img" />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Project Six</h2>
+                  <div class="btn-container">
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/project6'">Github</button>
+                      <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/project6'">Live Demo</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </div>
+  </section>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p3">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="k5177751800@gmail.com" target="_blank">k5177751800@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone-circle.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="Tel: 915-252-9338" target="_blank">915-252-9338</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/konghwan-shin-2b574524a/" target="_blank">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
